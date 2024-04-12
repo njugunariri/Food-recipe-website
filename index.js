@@ -50,9 +50,9 @@ const openRecipePopup = (meal) => {
     <h2 class="recipeName">${meal.strMeal}</h2>
     <h3>Ingredients:</h3>
     <ul class="ingredientsList">${fetchIngredients(meal)}</ul> 
-    <div>
+    <div class="recipeInstructions">
         <h3>Instructions:</h3>
-        <p class="recipeInstructions">${meal.strInsructions}</p>
+        <p>${meal.strInsructions}</p>
     </div>
     `
     
