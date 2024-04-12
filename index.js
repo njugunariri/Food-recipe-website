@@ -66,7 +66,7 @@ searchBtn.addEventListener(`click`, (e) =>{
     e.preventDefault();
     const searchInput = searchBox.value.trim ();
    if (!searchInput) {
-    recipeContainer.innerHTML = `<h2>Type the meal in the search box.`;
+    recipeContainer.innerHTML = `<h2>Type the meal in the search box.</h2>`;
     return;
    }
     fetchRecipes(searchInput);
