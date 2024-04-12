@@ -65,7 +65,10 @@ recipeCloseBtn.addEventListener(`click`, ()=>{
 searchBtn.addEventListener(`click`, (e) =>{
     e.preventDefault();
     const searchInput = searchBox.value.trim ();
-    // console.log(searchInput)
+   if (!searchInput) {
+    recipeContainer.innerHTML = `<h2>Type the meal`;
+    return;
+   }
     fetchRecipes(searchInput);
-   // console.log("Button Clicked");
+   
 });
